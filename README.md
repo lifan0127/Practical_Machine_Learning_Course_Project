@@ -1,11 +1,6 @@
----
-title: "README"
-author: "Fan Li"
-date: "Sunday, August 24, 2014"
-output: 
-  html_document:
-    keep_md: true
----
+# README
+Fan Li  
+Sunday, August 24, 2014  
 
 Course: Practical Machine Learning
 
@@ -15,23 +10,51 @@ With the increasing popularity of wearable devices for health/exercies monitorin
 
 
 
-```{r}
+
+```r
 library(knitr)
 library(ggplot2)
 library(reshape2)
 library(dplyr)
-library(caret)
-library(randomForest)
+```
 
+```
+## 
+## Attaching package: 'dplyr'
+## 
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+## 
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+```
+
+```r
+library(caret)
+```
+
+```
+## Loading required package: lattice
+```
+
+```r
+library(randomForest)
+```
+
+```
+## randomForest 4.6-10
+## Type rfNews() to see new features/changes/bug fixes.
+```
+
+```r
 setwd("C:/Users/Fan/R/Kaggle/Forest Cover Type Prediction")
 options(stringsAsFactors=FALSE)
-
 ```
 
 You can also embed plots, for example:
 
-```{r, echo=FALSE}
-plot(cars)
-```
+![plot of chunk unnamed-chunk-2](./README_files/figure-html/unnamed-chunk-2.png) 
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
